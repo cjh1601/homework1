@@ -1,7 +1,7 @@
 ---
 title: "Homework 1"
 author: "ks"
-date: "due 5/23/2018"
+date: "due 5/22/2019"
 output: html_document
 ---
 
@@ -89,11 +89,14 @@ Great. So now let's read these files in order.
 
 ###2a. Read in *.csv file
 
-```{r readcsv}
-datadir=c("data")
-fname=paste(datadir,"/GSM2776-sample-description.csv",sep="")
+```{r fullpathname}
+datadir <- c("data")
+fname <- paste(datadir,"/GSM2776-sample-description.csv",sep="")
 fname
-data=read.csv(fname,header=T,row.names=1)
+```
+
+```{r readcsv}
+data <- read.csv(fname,header=T,row.names=1)
 head(data,n=4)
 ```
 
@@ -115,16 +118,16 @@ rm(data)
 ###2b.  Read in space-delimitted *.txt  file
 
 ```{r readtable}
-fname=paste(datadir,"/GSM2776-sample-description.txt",sep="")
-data=read.table(fname,header=T,row.names=1)
+fname <- paste(datadir,"/GSM2776-sample-description.txt",sep="")
+data <- read.table(fname,header=T,row.names=1)
 head(data)
 ```
 
 ###2c.  Read in *.xls  file
 
 ```{r readxls}  
-fname=paste(datadir,"/GSM2776-sample-description.xls",sep="")
-data=read_xls(fname,sheet="thisone")
+fname <- paste(datadir,"/GSM2776-sample-description.xls",sep="")
+data <- read_xls(fname,sheet="thisone")
 head(data,n=4)
 rm(data)
 ```
