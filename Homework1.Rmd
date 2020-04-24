@@ -1,7 +1,7 @@
 ---
 title: "Homework 1"
 author: "ks"
-date: "due 5/22/2019"
+date: "due 11:59pm 5/26/2020"
 output: html_document
 ---
 
