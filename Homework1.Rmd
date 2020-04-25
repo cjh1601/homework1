@@ -133,6 +133,15 @@ head(data,n=4)
 rm(data)
 ```
 
+###2d.  Read in *.xlsx  file
+
+```{r readxls}  
+fname <- paste(datadir,"/GSM2776-sample-description.xlsx",sep="")
+data <- read_xlsx(fname,sheet="thisone")
+head(data,n=4)
+rm(data)
+```
+
 ## 3. Reproducible Research
 
 The command sessionInfo() will dump information about the operating system you are running and packages you have loaded. This information, along with data and code, should allow someone to reproduce any results in the future. 
