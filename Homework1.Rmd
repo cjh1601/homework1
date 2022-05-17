@@ -153,7 +153,7 @@ The command sessionInfo() will dump information about the operating system you a
 sessionInfo()
 ```
 
-### Q1. Why might the same command give different output? 
+### Q1. Why might the same command give different output?  Please explain why the following code creates two different histograms.
 
 Consider the following example:
 
