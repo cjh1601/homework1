@@ -153,7 +153,7 @@ The command sessionInfo() will dump information about the operating system you a
 sessionInfo()
 ```
 
-### Q1. Why might the same command give different output?  Please explain why the following code creates two different histograms.
+### Q1. Why might the same command give different output?  
 
 Consider the following example:
 
@@ -163,6 +163,8 @@ par(mfrow=c(1,2))
 hist(rnorm(100))
 hist(rnorm(100))
 ```
+
+Please explain why the above code creates two different histograms.
 
 ### ANSWER:
 
