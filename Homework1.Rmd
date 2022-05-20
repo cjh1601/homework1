@@ -58,7 +58,7 @@ If you have this on your computer, you've successfully accomplished steps 1 and 
 knitr::opts_chunk$set(echo = TRUE)
 
 r <- getOption("repos")
-r["CRAN"] <- "https://cran.mtu.edu//"
+r["CRAN"] <- "https://cran.wustl.edu//"
 options(repos = r)
 
 if(!require(tidyverse)){
