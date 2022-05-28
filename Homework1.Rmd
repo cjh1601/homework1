@@ -168,7 +168,7 @@ Please explain why the above code creates two different histograms.
 
 ### ANSWER:
 
-### Q2: Modify the code below so that the same figure is plotted twice.
+### Q2: Modify the code below so that the same histogram is plotted twice.
 
 ```{r modifythis}
 set.seed(50)
