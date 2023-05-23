@@ -1,6 +1,6 @@
 ---
 title: "Homework 1"
-author: "YOUR NAME"
+author: "Cassidy Hernandez-Tamayo"
 date: "due 11:59pm 5/23/2023"
 output: html_document
 ---
@@ -166,7 +166,7 @@ hist(rnorm(100))
 
 Please explain why the above code creates two different histograms.
 
-### ANSWER:
+### ANSWER: The code did not set the seed for the second histogram.
 
 ### Q2: Modify the code below so that the same histogram is plotted twice.
 
@@ -174,6 +174,7 @@ Please explain why the above code creates two different histograms.
 set.seed(50)
 par(mfrow=c(1,2))
 hist(rnorm(100))
+set.seed(50)
 hist(rnorm(100))
 ```
 
